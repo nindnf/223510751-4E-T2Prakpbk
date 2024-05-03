@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'monserrat', sans-serif;
+}
+
+body {
+  margin-top: 50px;
+  padding: 0;
+  background-image: url('assets\bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.app {
+  width: 70%;
+  margin: auto;
+}
+
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h4 {
+  color: var(--dark);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.greeting .title {
+  display: flex;
+}
+
+.content-box {
+  margin-top: 6rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+header {
+  line-height: 1.5;
+  max-height: 100vh;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+nav {
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 1rem;
+  border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+  border: 0;
+}
+
+.main {
+  text-align: center;
+}
+
+.highlight {
+  color: red;
+}
+
+input {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+header, main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Menengahkan navigasi */
+nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Mengatur margin untuk kotak konten di tengah */
+.content-box {
+  margin-top: 1rem; 
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    text-align: left;
+    margin-left: -1rem;
+    font-size: 1rem;
+
+    padding: 1rem 0;
+    margin-top: 1rem;
+  }
+  @media (orientation: portrait) {
+  header {
+    max-height: none; /* Menghapus batasan tinggi maksimum untuk header */
+  }
+
+  .logo {
+    margin: 2rem auto; /* Menengahkan logo */
+  }
+
+  nav {
+    margin-top: 1rem; /* Menurunkan navigasi sedikit */
+  }
+
+  .content-box {
+    margin-top: 1rem; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .app {
+    width: 95%;
+    margin: auto;
+  }
+}
+}
